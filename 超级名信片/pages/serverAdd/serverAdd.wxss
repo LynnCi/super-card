@@ -1,0 +1,101 @@
+/* pages/serverAdd/serverAdd.wxss */
+.container{
+  width:100%;
+  height:100%;
+  background: #f5f9ff;
+}
+/*添加封面图*/
+.addBg{
+  width:100%;
+  height:380rpx;
+  font-size:34rpx;
+  color:#bbbbbb;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.addBg image{
+  width:120rpx;
+  height:120rpx;
+  margin-bottom:30rpx;
+}
+
+/*添加服务名称和简介*/
+.addTxt{
+  width: 100%;
+  height:auto;
+  background: #fff;
+}
+.addTxt input{
+  width:100%;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:34rpx;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  border-bottom:2rpx solid #eee;
+}
+.addTxt textarea{
+  width: 100%;
+  height:300rpx;
+  padding:30rpx;
+  font-size:28rpx;
+  line-height: 38rpx;
+  box-sizing: border-box;
+}
+.addMsg,.addImage{
+  width:100%;
+  height:auto;
+
+}
+.addMsg text,.addImage text{
+  font-size:30rpx;
+  color:#333;
+  line-height: 85rpx;
+  padding:0 30rpx;
+  box-sizing: border-box;
+}
+.addMsg textarea{
+  width:100%;
+  height: 400rpx;
+  padding:30rpx;
+  font-size:28rpx;
+  line-height: 38rpx;
+  background: #fff;
+  }
+.addImage .imgList{
+  width:100%;
+  min-height:220rpx;
+  padding:20rpx 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.addImage .imgList .addPic{
+  width:175rpx;
+  height:175rpx;
+  border-radius:10rpx;
+  border:2rpx dashed #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addImage .imgList .addPic image{
+  width:80rpx;
+  height:80rpx;
+}
+.btnSave{
+  width:100%;
+  height:88rpx;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  margin:40rpx auto 125rpx;
+}
+.btnSave button{
+  width:100%;
+  height:100%;
+  line-height: 88rpx;
+  color:#fff;
+  background: linear-gradient(to right,#52a3f4 ,#013994);
+}

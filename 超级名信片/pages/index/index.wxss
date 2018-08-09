@@ -1,0 +1,158 @@
+.box{
+  padding: 40rpx 30rpx 0;
+}
+.cardImg{
+  position: relative;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  overflow: hidden
+}
+.card_bg{
+  display: block;
+  width: 100%;
+}
+.card_logo{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 180rpx;
+  height: 180rpx;
+}
+.card_title{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+}
+.card_biaoyu{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  font-size: 36rpx;
+  text-align: center;
+  color: #fff;
+}
+.cardInfo{
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  overflow: hidden;
+  background: #fff;
+ box-shadow:0rpx 10rpx 20rpx #cccc;
+
+}
+.cardNames{
+  flex: 0 0 200rpx;
+  width: 200rpx;
+  padding: 30rpx 0 30rpx 30rpx;
+  box-sizing: border-box;
+}
+.nameText{
+  font-size: 46rpx;
+  font-weight: 500;
+}
+.nameText2{
+  font-size: 32rpx;
+}
+.cardConf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 30rpx 30rpx 30rpx 0;
+}
+.confZhiwei{
+    text-align: right;
+    font-size: 30rpx;
+}
+.confDanwei{
+  text-align: right;
+  font-size: 30rpx;
+}
+.pageTit{
+  padding: 30rpx;
+  font-size: 40rpx;
+  line-height: 60rpx;
+}
+.pageTit view{
+  float: left;
+  width: 8rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  background: #003993;
+}
+
+.box2{
+  background: #fff;
+  padding: 0 30rpx 30rpx;
+}
+.listItem{
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #e5e5e5;
+  position: relative;
+}
+.itemName{
+  flex: 0 0 150rpx;
+  width: 150rpx;
+  font-size: 36rpx;
+  padding: 30rpx 0;
+  text-align: center;
+}
+.itemInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 30rpx 60rpx 30rpx 15rpx;
+  font-size: 32rpx;
+  color: #888;
+
+}
+.itemIcon{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+  width: 60rpx;
+  height: 60rpx;
+}
+.itemIcon image{
+  display: block;
+  width: 100%;
+}
+.sendCard,.saveCard{
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 30rpx 0;
+  font-size: 36rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+  background: linear-gradient(to right, #76b7f8 , #003893);
+}
+.box3{
+  background: #fff;
+  padding: 30rpx;
+  margin-bottom: 120rpx;
+}
+.listImg image{
+  width: 100%;
+}
+.jieshaoText{
+  margin: 30rpx 0;
+  font-size: 28rpx;
+  line-height: 180%;
+  color: #333; 
+}
+
+.none{
+  display: none;
+}

@@ -1,0 +1,151 @@
+<!--pages/cardMy/cardMy.wxml-->
+<view class='container'>
+  <!-- 姓名 -->
+  <view class='banner'>
+    <view class='main'>
+      <!-- 名片背景 -->
+      <view class='mainBg'>
+        <image src="{{banImg}}" class='bannerImg'></image>
+        <image src="{{logoImg}}" class='logo'></image>
+        <view class='logo2'>
+          <image src='/img/doul.png'></image>
+          <text>{{bannerTxt1}}</text>
+          <image src='/img/dour.png'></image>
+        </view>
+        <text class='xc'>{{bannerTxt2}}</text>
+        <text class="myTxt {{showMyCard?'show':'hide'}}">我的名片</text>
+      </view>
+      <!-- 姓名信息 -->
+      <view class='name'>
+        <view class='nameLeft'>
+          <text class='nameTxt'>{{name}}</text>
+          <text class='nameLet'>{{nameLetter}}</text>
+        </view>
+        <view class='nameRight'>
+          <text class='zhiwu'>{{zhiwu}}</text>
+          <text class='unit'>{{unit}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 搜索 -->
+  <view class='search'>
+    <navigator url="../cardSearch/cardSearch">
+      <view>
+        <image src="/img/search.png"></image>
+        <text>搜索</text>
+      </view>
+    </navigator>
+  </view>
+
+  <!-- 收到的名片 -->
+  <view class="recive">
+    <view class='cardTop'>
+      <image src="/img/card.png" class='card'></image>
+      <text>我收到的名片</text>
+      
+    </view>
+    <!-- 名片列表 -->
+    <view class='cardList'>
+      <!-- <view class='listItem'>
+        <text class='letter2'>C</text>
+        <view class='item'>
+          <image src='/img/men.png' class='men'></image>
+          <view>
+            <text class='name'>姓名</text>
+            <text class='intro'>北京易魔方科技集团有限公司</text>
+          </view>
+          
+        </view>
+      </view>
+       <view class='listItem'>
+        <text class='letter2'>C</text>
+        <view class='item'>
+          <image src='/img/men.png' class='men'></image>
+          <view>
+            <text class='name'>姓名</text>
+            <text class='intro'>北京易魔方科技集团有限公司</text>
+          </view>
+          
+        </view>
+      </view> -->
+      <block wx:for="{{dataList}}" wx:for-item="item" wx:for-name="name">
+        <view class='listItem'>
+          <text class='letter2'></text>
+          <view class='item'>
+            <image src='' class='men'></image>
+            <view>
+              <text class='name'>{{item}}</text>
+              <text class='intro'>{{item.name}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class='num'>
+        <text>{{item.numTotal}}</text>张名片
+      </view>
+      
+    </view>
+  </view>
+
+  <!-- 添加到桌面&&找到 -->
+  <view class='myBtn'>
+    <view class="addCard" bindtap="showHideBtn">
+      <image src="/img/btn1.png" class='tb'></image>
+      <text>添加到桌面</text>
+      <image src="/img/more.png" class='more'></image>
+    </view>
+    <view class='fondCard' >
+      <navigator url='../cardFind/cardFind'>
+        <image src="/img/btn2.png" class='tb'></image>
+        <text>如何在微信中找到“微名片”小程序？</text>
+        <image src="/img/more.png" class='more'></image>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- 编辑 -->
+  <view class='edit' >
+    <navigator url="">
+      <image src='/img/edit.png'></image>
+    </navigator>
+  </view> 
+
+  <!-- 字母 -->
+  <view class='letter'>
+    <image src='/img/up.png' class='up'></image>
+    <text>C</text>
+    <text>G</text>
+    <text>E</text>
+    <text>F</text>
+  </view>
+
+  <!-- 首页弹框 -->
+  <view class='boxShow boxShow1' style='display:none'>
+    <view class='boxMain'>
+      <view class='boxTop'>
+        <image src='/img/logo.png'></image>
+        <text>请开启您的微名片之旅!</text>
+      </view>
+      <view class='boxBtn'>
+        <text class='close'>关闭</text>
+        <text class='start'>立即开启</text>
+      </view>
+      
+    </view>
+  </view>
+
+  <!-- 添加到桌面弹框-->
+  <view class="boxShow boxShow2 {{showHideTab?'show':'hide'}}">
+      <image src='/img/jt.png'></image>
+      <view class='boxTxt2'>
+        <text class='txt1'>点击右上角</text>
+        <text>选择“添加到桌面”</text>
+        <button bindtap="showHideBtn2" >我知道了</button>
+      </view>
+      
+  </view>
+
+</view>
+

@@ -1,0 +1,60 @@
+<!--pages/cardMore/cardMore.wxml-->
+<view class="container">
+  <view class='top'>
+    <image src='/img/logo.png'></image>
+    <text class='title'>微名片</text>
+    <text class='article'>“微名片”是一款免费为用户提供电子名片制作,名片收发，名片信息管理等功能的微信小程序。</text>
+    <text class='article'>您的每一次使用、每一条反馈，都是我们进步的动力。我们坚信在不远的未来，一定可以实现:“微名片”，发天下！</text>
+  </view>
+  <!--列表-->
+  <view class='list'>
+    <view class='listItem'>
+      <image src="/icon/1icon1.png" class='tb'></image>
+      <text>联系客服</text>
+      <image src="/img/more.png" class='more'></image>
+    </view>
+    <view class='listItem'>
+      <image src="/icon/2icon2.png" class='tb'></image>
+      <text>使用帮助</text>
+      <image src="/img/more.png" class='more'></image>
+    </view>
+    <view class="listItem" bindtap="showHideBtn">
+      <image src="/icon/3icon3.png" class='tb'></image>
+      <text>添加到桌面</text>
+      <image src="/img/more.png" class='more'></image>
+    </view>
+    <view class='listItem'>
+      <navigator url='../cardFind/cardFind'>
+        <image src="/icon/4icon4.png" class='tb'></image>
+        <text>如何在微信中查找“微名片”小程序？</text>
+        <image src="/img/more.png" class='more'></image>
+      </navigator>
+    </view>
+    <view class='listItem'>
+      <navigator url='../cardFind/cardFind' >
+        <image src="/icon/5icon5.png" class='tb'></image>
+        <text>我们的服务</text>
+        <image src="/img/more.png" class='more'></image>
+      </navigator>
+    </view>
+
+  </view>
+  <!--btn-->
+  <view class='btn'>
+    <navigator url='../index/index' open-type="switchTab">
+      <view class='btnUse'>开始使用“微名片”</view> 
+    </navigator>
+    <view class='btnRecomd'>推荐给朋友</view>
+  </view> 
+  <!--添加到桌面弹框-->
+  <view class="boxShow {{showHideTab?'show':'hide'}}">
+      <image src='/img/jt.png'></image>
+      <view class='boxTxt'>
+        <text class='txt1'>点击右上角</text>
+        <text>选择“添加到桌面”</text>
+        <button bindtap="showHideBtn2" >我知道了</button>
+      </view>
+      
+  </view>
+</view>
+

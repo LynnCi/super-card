@@ -1,0 +1,21 @@
+<view class='news'>
+  <scroll-view scroll-y style="height: 100vh;" bindscrolltolower="lower">
+     <view wx:for="{{list}}" wx:for-item="i"> 
+          <view class='newsItem' id="{{i.id}}">
+            <view class='newsTit'>{{i.title}}</view>
+            <view class='newsCon'>{{i.info}}</view>
+            <view class='imgList'>
+              <view wx:for="{{i.images}}" wx:for-item="j">
+                <image src='{{j}}'></image>
+              </view>
+            </view>
+            <view class='time'>{{i.time}}</view>
+          </view>
+     </view>
+  </scroll-view>
+</view>
+<view class='bianji'>
+  <navigator url='../newsSet/newsSet'>
+    <image src='/icon/bianji.png' mode="widthFix"></image>
+  </navigator>
+</view>

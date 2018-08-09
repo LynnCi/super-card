@@ -1,0 +1,31 @@
+<!--pages/newsAdd/newsAdd.wxml-->
+<view class='container'>
+  <view class='addTxt'>
+    <input placeholder='请输入动态标题...'></input>
+    <textarea placeholder='请输入动态详情...'></textarea>
+  </view>
+  <view class='addMsg'>
+    <text>添加文字</text>
+    <textarea placeholder='请输入文字...'></textarea>
+  </view>
+  <!--添加图片-->
+  <view class='addImage'>
+    <text>添加图片</text>
+    <view class='imgList'>
+      <!-- <view class='imageList'>
+        <image src='{{image}}' bindtap="previewImage"></image>
+      </view> -->
+      <view class='addPic' bindtap="chooseImage">
+        <image src='/img/add.png'></image>
+      </view>
+    </view>
+  </view>
+  <!--保存-->
+  <view class='btnSave'>
+    <button>保存</button>
+  </view>
+
+
+</view>
+
+

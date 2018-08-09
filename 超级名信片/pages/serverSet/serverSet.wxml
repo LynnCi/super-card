@@ -1,0 +1,68 @@
+<!--pages/serverSet/serverSet.wxml-->
+<view class='conatiner'>
+  <!-- 添加服务-->
+  <navigator url="../serverAdd/serverAdd">
+    <view class='serverAdd'>
+      <image src='/img/add.png'></image>
+      <text class='txt'>添加服务</text>
+    </view>
+  </navigator>
+  <!-- 服务列表 -->
+  <view class='serverList'>
+    <view class='item'>
+      <image class="imgbg" src='{{listImg}}'></image>
+      <image class='imgShad' src='{{bgImg}}'></image>
+      <view class='listMsg'>
+        <text class='msg1'>社会组织财税服务</text>
+        <text class='msg2'>
+          <text class='point'>·</text>社会组织财税知识大讲堂
+        </text>
+        <text class='msg2'>
+          <text class='point'>·</text>陪伴式指导
+        </text>
+        <text class='msg2'>
+          <text class='point'>·</text>代理记账(涉税风险监控)
+        </text>
+        <text class='msg2'>
+          <text class='point'>·</text>财务顾问(打包服务)
+        </text>
+      </view>
+    </view> 
+    <view class='item'>
+      <image class="imgbg" src='{{listImg}}'></image>
+      <image class='imgShad' src='{{bgImg}}'></image>
+      <view class='listMsg'>
+        <text class='msg1'>社会组织财税服务</text>
+        <text class='msg2'>
+          <text class='point'>·</text>社会组织财税知识大讲堂
+        </text>
+        <text class='msg2'>
+          <text class='point'>·</text>陪伴式指导
+        </text>
+        <text class='msg2'>
+          <text class='point'>·</text>代理记账(涉税风险监控)
+        </text>
+        <text class='msg2'>
+          <text class='point'>·</text>财务顾问(打包服务)
+        </text>
+      </view>
+    </view>  
+  </view>
+  <!-- edit -->
+  <view class='serverEdit' style='display:none'>
+    <image src='/img/save.png'></image>
+    <text>保存</text>
+  </view>
+  
+</view>
+<!-- bottom tab -->
+  <view class='bottomTab'>
+    <view>名片</view>
+    <view>
+      <image src='/img/tabbar.png'></image>
+      <text class='on'>服务</text>
+    </view>
+    <navigator url='../news/news' open-type='switchTab'>
+      <view>动态</view>
+    </navigator>
+  </view>

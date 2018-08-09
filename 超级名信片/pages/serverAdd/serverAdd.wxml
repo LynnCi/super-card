@@ -1,0 +1,30 @@
+<!--pages/serverAdd/serverAdd.wxml-->
+<view class='container'>
+  <view class='addBg'>
+    <image src='/img/addBG.png'></image>
+    <text>添加封面图</text>
+  </view>
+  <view class='addTxt'>
+    <input placeholder='点击输入服务名称'></input>
+    <textarea placeholder='请输入服务简介（限50字以内）'></textarea>
+  </view>
+  <view class='addMsg'>
+    <text>添加文字</text>
+    <textarea placeholder='请输入文字...'></textarea>
+  </view>
+  <!--添加图片-->
+  <view class='addImage'>
+    <text>添加图片</text>
+    <view class='imgList'>
+      <view class='addPic'>
+        <image src='/img/add.png'></image>
+      </view>
+    </view>
+  </view>
+  <!--保存-->
+  <view class='btnSave'>
+    <button>保存</button>
+  </view>
+
+</view>
+

@@ -1,0 +1,18 @@
+<view class='server'>
+  <scroll-view scroll-y style="height: 100vh;" bindscrolltolower="lower">
+     <view wx:for="{{list}}"> 
+        <navigator url="/pages/serverDeatil/serverDeatil?id={{item.id}}">
+          <view class='serverItem' id="{{item.id}}">
+            <image src='{{item.src}}' mode='widthFix'></image>
+            <view class='serverTit'>{{item.title}}</view>
+            <view class='serverCon'>{{item.info}}</view>
+          </view>
+        </navigator>
+     </view>
+  </scroll-view>
+</view>
+<view class='bianji'>
+  <navigator url="../serverSet/serverSet">
+    <image src='/icon/bianji.png' mode="widthFix"></image>
+ </navigator>
+</view>

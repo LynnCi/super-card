@@ -1,0 +1,10 @@
+<view class='box'>
+  <view class='title'>{{title}}</view>
+  <view class='time'>{{time}}<text class='name'>{{name}}</text></view>
+  <view>
+    <view wx:for="{{images}}" class='listImg'>
+      <image src='{{item}}' mode='widthFix'></image>
+    </view>
+    <view class='jieshaoText'>{{info}}</view>
+  </view>
+</view>

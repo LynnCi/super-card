@@ -1,0 +1,33 @@
+<!--pages/newsSet/newsSet.wxml-->
+<navigator url='../newsAdd/newsAdd'>
+  <view class='newsAdd'>
+    <image src='/img/add.png'></image>
+    <text>添加动态</text>
+  </view>
+</navigator>
+
+<scroll-view scroll-y style="height: 100vh;" bindscrolltolower="lower">
+    <view wx:for="{{list}}" wx:for-item="i"> 
+        <view class='newsItem' id="{{i.id}}">
+          <view class='newsTit'>{{i.title}}</view>
+          <view class='newsCon'>{{i.info}}</view>
+          <view class='imgList'>
+            <view wx:for="{{i.images}}" wx:for-item="j">
+              <image src='{{j}}'></image>
+            </view>
+          </view>
+          <view class='time'>{{i.time}}</view>
+        </view>
+    </view>
+</scroll-view>
+
+<view class='bottomTab'>
+  <view>名片</view>
+  <view>
+    <navigator url='../servers/servers' open-type='switchTab'>服务</navigator>
+  </view>
+  <view>
+    <image src='/img/tabbar.png'></image>
+    <text class='on'>动态</text>
+  </view>
+</view>

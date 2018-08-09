@@ -1,0 +1,148 @@
+/* pages/cardMore/cardMore.wxss */
+.container{
+  width:100%;
+  height:100%;
+  background: #f5f9ff;
+}
+/********************* top ******************/
+.top{
+  width:100%;
+  height:545rpx;
+  background: #fff;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  margin-bottom:20rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top image{
+  width:84rpx;
+  height:88rpx;
+  margin-bottom:40rpx;
+}
+.top .title{
+  font-size:40rpx;
+  color:#333;
+  margin-bottom:22rpx;
+}
+.top .article{
+  font-size:28rpx;
+  color:#666;
+  line-height: 44rpx;
+  text-align: left;
+  text-indent: 2em;
+}
+
+/************ list ****************/
+.list{
+  width:100%;
+  height:auto;
+  margin-bottom:20rpx;
+}
+.list .listItem{
+  width:100%;
+  height:100rpx;
+  line-height: 100rpx;
+  border-bottom:1rpx solid #f5f9ff;
+  padding:0 50rpx 0 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.list .tb{
+  width:48rpx;
+  height:48rpx;
+  border-radius:10rpx;
+  margin-right:20rpx;
+  margin-top:26rpx;
+  float:left;
+}
+.list .more{
+  width:13rpx;
+  height:24rpx;
+  float:right;
+  margin-top:38rpx;
+}
+.list text{
+  font-size:26rpx;
+  color:#333;
+  float:left;
+}
+
+/**************** btn *******************/
+.btn{
+  width:100%;
+  height:auto;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  margin-bottom:65rpx;
+}
+.btn view{
+  width:100%;
+  height:88rpx;
+  line-height: 88rpx;
+  font-size:36rpx;
+  text-align: center;
+  border-radius:10rpx;
+}
+.btn view.btnUse{
+  color:#fff;
+  background: linear-gradient(to right,#52a3f4 ,#013994);
+  margin-bottom:10rpx;
+}
+.btn view.btnRecomd{
+  color:#333;
+  background:#fff;
+  border:1rpx solid #eee;
+  box-sizing: border-box;
+
+}
+.show{display: block;}
+.hide{display: none;}
+/*弹框*/
+.boxShow{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0,0,0,.7);
+    
+}
+  
+.boxShow image{
+  position: absolute;
+  width:253rpx;
+  height:291rpx;
+  top:65rpx;
+  right:110rpx;
+}
+.boxShow .boxTxt{
+  position: absolute;
+  top:50%;
+  left:50%;
+  color:#fff;
+  text-align: center;
+  margin:0 auto;
+  transform: translate(-50%,0);
+}
+.boxShow .boxTxt text{
+  display: block;
+  font-size:34rpx;
+  line-height: 72rpx;
+
+}
+button{
+  width:460rpx;
+  height:90rpx;
+  line-break: 90rpx;
+  text-align: center;
+  font-size:36rpx;
+  color:#fff;
+  background: linear-gradient(to right,#52a3f4 ,#013994);
+  border-radius: 10rpx;
+  margin-top:20rpx;
+}

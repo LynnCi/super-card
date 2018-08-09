@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/newsAdd/newsAdd",
+    "pages/test/test",
+    "pages/news/news",
+    "pages/serverSet/serverSet",
+    "pages/serverAdd/serverAdd",
+    "pages/servers/servers",
+    "pages/cai/cai",
+    "pages/serverDeatil/serverDeatil",
+    "pages/user/user",
+    "pages/more/more",
+    "pages/newsSet/newsSet"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "名片",
+        "iconPath": "icon/icon1.png",
+        "selectedIconPath": "icon/icon1s.png"
+      },
+      {
+        "pagePath": "pages/servers/servers",
+        "text": "服务",
+        "iconPath": "icon/icon2.png",
+        "selectedIconPath": "icon/icon2s.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icon/icon3.png",
+        "selectedIconPath": "icon/icon3s.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "动态",
+        "iconPath": "icon/icon4.png",
+        "selectedIconPath": "icon/icon4s.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多",
+        "iconPath": "icon/icon5.png",
+        "selectedIconPath": "icon/icon5s.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#2f6498"
+  }
+}

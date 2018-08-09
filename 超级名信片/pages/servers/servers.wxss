@@ -1,0 +1,41 @@
+/* pages/servers/servers.wxss */
+scroll-view{
+  height:100vh;
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+}
+.serverItem{
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.serverItem image{
+  display: block;
+  width: 100%;
+}
+.serverTit{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 30rpx;
+  font-size: 32rpx;
+  color: #fff;
+  border-bottom: 2rpx solid #fff;
+  box-sizing: border-box;
+}
+.serverCon{
+  position: absolute;
+  top: 100rpx;
+  left: 0;
+  width: 100%;
+  line-height: 70rpx;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: #fff;
+  text-align: justify;
+  box-sizing: border-box;
+}

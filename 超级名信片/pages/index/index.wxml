@@ -1,0 +1,78 @@
+<view class='box'>
+  <view class='cardImg'>
+    <image src='{{userInfo.bg}}' mode="widthFix" class='card_bg'></image>
+    <image src='{{userInfo.logo}}' mode="widthFix" class='card_logo'></image>
+    <image src='{{userInfo.title}}' mode="widthFix" class='card_title'></image>
+    <view class='card_biaoyu'>{{userInfo.biaoyu}}</view>
+  </view>
+  <view class='cardInfo'>
+    <view class='cardNames'>
+      <view class='nameText'>{{userInfo.name}}</view>
+      <view class='nameText2'>{{userInfo.namePingying}}</view>
+    </view>
+    <view class='cardConf'>
+      <view class='confZhiwei'>{{userInfo.zhiwei}}</view>
+      <view class='confDanwei'>{{userInfo.danwei}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='pageTit'>
+  <view></view>联系方式
+</view>
+
+<view class='box2'>
+  <view class='listItem'>
+    <view class='itemName'>手机</view>
+    <view class='itemInfo'>
+      {{userInfo.tel}}
+    </view>
+    <view class='itemIcon' bindtap='phone'>
+        <image src='/icon/icon_phone.png' mode="widthFix"></image>
+      </view>
+  </view>
+  <view class='listItem'>
+    <view class='itemName'>微信</view>
+    <view class='itemInfo'>
+      {{userInfo.weixin}}
+    </view>
+    <view class='itemIcon' bindtap='copyWx'>
+        <image src='/icon/icon_wx.png' mode="widthFix"></image>
+      </view>
+  </view>
+  <view class='listItem'>
+    <view class='itemName'>邮箱</view>
+    <view class='itemInfo'>
+      {{userInfo.email}}
+    </view>
+    <view class='itemIcon' bindtap='copyEmail'>
+        <image src='/icon/icon_email.png' mode="widthFix"></image>
+      </view>
+  </view>
+  <view class='listItem'>
+    <view class='itemName'>地址</view>
+    <view class='itemInfo'>
+      {{userInfo.addrs}}
+    </view>
+    <view class='itemIcon' bindtap='maps'>
+        <image src='/icon/icon_addrs.png' mode="widthFix"></image>
+      </view>
+  </view>
+  <view class='sendCard' wx:if="{{isShow == 1}}">发名片</view>
+  <view class='saveCard' wx:elif="{{isShow == 2}}">收藏名片</view>
+</view>
+
+<view class='pageTit'>
+  <view></view>单位简介
+</view>
+
+<view class='box3'>
+  <view wx:for="{{userJianjie.images}}" class='listImg'>
+    <image src='{{item}}' mode='widthFix'></image>
+  </view>
+  <view class='jieshaoText'>{{userJianjie.info}}</view>
+</view>
+
+<view class='bianji'>
+ <image src='/icon/bianji.png' mode="widthFix"></image>
+</view>

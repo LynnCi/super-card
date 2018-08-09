@@ -1,0 +1,144 @@
+/* pages/serverSet/serverSet.wxss */
+.conatiner{
+  width:100%;
+  height: 100%;
+  background: #f5f9ff;
+  margin:20rpx auto;
+  padding:20rpx 30rpx;
+  box-sizing: border-box;
+}
+/************ 添加服务 ************/
+.serverAdd{
+  width: 100%;
+  height:380rpx;
+  font-size:34rpx;
+  color:#bbbbbb;
+  border-radius:10rpx;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.serverAdd image{
+  width:120rpx;
+  height:120rpx;
+  margin-bottom:30rpx;
+}
+
+/************ 服务列表 ************/
+.serverList{
+  width:100%;
+  height:auto;
+  margin-bottom:100rpx;
+
+}
+.serverList .item{
+  position: relative;
+  width:100%;
+  height:380rpx;
+  border-radius:10rpx;
+  margin-top:20rpx;
+  background: #eee;
+}
+.serverList .item image{
+  width:100%;
+  height:100%;
+}
+.serverList .item .imgShad{
+  position: absolute; 
+  top:0;
+  left:0;
+  z-index:999;
+}
+.serverList .item .listMsg{
+  position: absolute;
+  width:100%;
+  top:0;
+  left:0;
+  z-index: 1000;
+  color:#fff;
+  /* padding:0 40rpx;
+  box-sizing: border-box; */
+}
+.listMsg text{
+  display: block;
+}
+.listMsg .point{
+  display: inline-block;
+}
+.listMsg .msg1{
+  width:100%;
+  height:90rpx;
+  line-height: 90rpx;
+  font-size:32rpx;
+  padding:0 40rpx;
+  border-bottom:1rpx solid #fff;
+  margin-bottom:20rpx;
+}
+.listMsg .msg2{
+  font-size: 26rpx;
+  line-height: 56rpx;
+  padding:0 40rpx;
+}
+
+/************ edit ************/
+.serverEdit{
+  position: fixed;
+  width:100rpx;
+  height:100rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#fff;
+  border-radius:50rpx;
+  bottom:200rpx;
+  right:30rpx;
+  z-index:1000;
+}
+.serverEdit image{
+  width:100rpx;
+  height:100rpx;
+  z-index:999;
+}
+.serverEdit text{
+  position: absolute;
+  width:100%;
+  z-index:1000;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/************** bottomTab **************/
+.bottomTab{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:32rpx;
+  color:#003893;
+  background: #fff;
+  z-index:1000;
+}
+.bottomTab view{
+  position: relative;
+  width:33.3%;
+  height:100%;
+  float:left;
+  text-align: center;
+}
+.bottomTab view image{
+  width:100%;
+  height:100%;
+  
+}
+.bottomTab .on{
+  position: absolute;
+  color:#fff;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
